@@ -13,6 +13,7 @@ const categoriesRouter = require('./app/api/v1/categories/router');
 const imagesRouter = require('./app/api/v1/images/router');
 const talentsRouter = require('./app/api/v1/talents/router');
 const eventRouter = require('./app/api/v1/events/router');
+const organizerRouter = require('./app/api/v1/organizers/router');
 const handleErrorMiddleware = require('./app/middlewares/handler-error');
 const notFoundMiddleware = require('./app/middlewares/not-found');
 
@@ -35,6 +36,7 @@ app.use(v1, categoriesRouter);
 app.use(v1, imagesRouter);
 app.use(v1, talentsRouter);
 app.use(v1, eventRouter);
+app.use(v1, organizerRouter);
 //app.use(v1, categoriesTalent);
 
 app.use(handleErrorMiddleware);
