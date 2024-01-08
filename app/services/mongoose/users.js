@@ -18,7 +18,7 @@ const createOrganizer = async (req) => {
         role,
     });
 
-    delete users._doc.password;
+   delete users._doc.password;
 
     return users;
 };
